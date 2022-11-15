@@ -3,7 +3,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -11,7 +10,7 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 3fr;
 }
 .nav-sidebar {
   display: flex;
@@ -19,12 +18,14 @@
   gap: 1.25rem;
   background-color: #34353a;
   color: white;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 .nav-item {
   display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
   gap: 0.5rem;
-  align-items: flex-end;
+  cursor: pointer;
 }
 .dashboard,
 .settings {
