@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="main_grid-container">
+    <div class="main-grid-container">
       <!-- nav-bar -->
       <div class="nav-sidebar">
         <div class="nav-item dashboard">
@@ -44,7 +44,29 @@
 
       <!--  Main content  -->
       <div class="main-content-container">
-        <div class="header">header</div>
+        <div class="header">
+          <div id="header-section">
+            <div id="search-bar">
+              <img class="icon" src="img/search.png" alt="search icon" />
+              <div id="search-bar-space"></div>
+            </div>
+            <div id="user-profile">
+              <img class="icon" src="img/bell.png" alt="bell icon" />
+              <img
+                id="profile-picture"
+                src="img/profile-picture.jpg"
+                alt="user profile picture"
+              />
+              <span id="profile-name">Adam Smasher</span>
+            </div>
+          </div>
+          <div id="search-bar-buttons">
+            <button>New Task</button>
+            <button>Submit Task</button>
+            <button>Upload Files</button>
+          </div>
+        </div>
+
         <div class="main-content">main content</div>
       </div>
 
