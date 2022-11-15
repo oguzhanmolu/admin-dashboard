@@ -26,15 +26,20 @@
   gap: 0.5rem;
   cursor: pointer;
 }
+.dashboard {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.home,
+.settings {
+  margin-top: 2.5rem;
+}
 .nav-item:hover {
   background-color: black;
   scale: 1.15;
   filter: invert();
 }
-.dashboard,
-.settings {
-  margin-top: 5rem;
-}
+
 .main-content-container {
   display: grid;
   grid-template-rows: 1fr 4fr;
@@ -67,6 +72,7 @@
   height: 75px;
   border-radius: 50%;
   cursor: pointer;
+  color: #34353a;
 }
 #profile-picture:hover {
   scale: 1.3;
@@ -93,5 +99,49 @@ button:hover {
 }
 /*  */
 .main-content {
-  background-color: rgb(56, 144, 206);
+  background-color: rgb(210, 210, 210);
+}
+.grid-area {
+  height: 750px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.grid {
+  margin: 1.25rem;
+  padding: 1rem;
+  background-color: #34353a;
+  color: white;
+  border-radius: 10px;
+  border-left: 10px solid #34353a;
+}
+.grid:hover {
+  scale: 1.1;
+}
+.announcements {
+  grid-row: 1/4;
+  grid-column: 3;
+}
+.grid-hl {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+.grid-hl,
+.grid-text {
+  margin: 1rem;
+}
+.grid-text {
+  font-size: 1.25rem;
+}
+#hl {
+  margin: 2rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+#main-headlight-one {
+  margin-left: 425px;
+}
+#main-headlight-two {
+  margin-left: 600px;
 }
