@@ -14,18 +14,13 @@ body {
   border: 20px solid #34353a;
 }
 .nav-sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  background-color: #34353a;
   color: white;
 }
 .nav-item {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
-  margin-right: 1.5rem;
   gap: 0.5rem;
+  margin: 2rem;
   cursor: pointer;
 }
 .dashboard {
@@ -36,7 +31,7 @@ body {
   margin-top: 2rem;
 }
 .settings {
-  margin-top: 490px;
+  margin-top: 432px;
 }
 .nav-item:hover {
   background-color: black;
@@ -47,10 +42,10 @@ body {
   display: grid;
   grid-template-rows: 1fr 3.5fr;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 header {
-  border-bottom: 25px solid #34353a;
+  border-bottom: 30px solid #34353a;
 }
 #header-section {
   display: flex;
@@ -62,18 +57,20 @@ header {
 }
 #search-bar {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 #search-bar-space {
   width: 600px;
-  height: 30px;
-  background-color: rgb(225, 225, 225);
-  border-radius: 10px;
+  height: 40px;
+  background-color: rgb(215, 225, 225);
+  border: 2px solid #34353a;
+  border-radius: 20px;
 }
 #user-profile {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 #profile-picture {
   width: 75px;
@@ -83,7 +80,7 @@ header {
   color: #34353a;
 }
 img:hover {
-  scale: 1.25;
+  scale: 1.4;
 }
 #profile-name {
   font-size: 1.4rem;
@@ -92,13 +89,13 @@ img:hover {
 }
 #search-bar-buttons {
   margin-top: 1rem;
-  margin-left: 112px;
+  margin-left: 125px;
 }
 button {
   background-color: #34353a;
   color: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 15px;
+  border-radius: 20px;
   margin-left: 20px;
   font-size: 1.5rem;
   border-style: none;
@@ -110,6 +107,7 @@ button:hover {
 #main-hl {
   margin-top: 1rem;
   font-size: 2rem;
+  color: #34353a;
   font-weight: bold;
 }
 #main-headlight-one {
@@ -121,11 +119,11 @@ button:hover {
 .grid-area {
   display: grid;
   gap: 1.5rem;
-  margin: 1rem;
+  margin: 1.5rem;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 .grid {
-  padding: 1.4rem;
+  padding: 1.25rem;
   background-color: #34353a;
   color: white;
   border-radius: 20px;
@@ -135,16 +133,14 @@ button:hover {
 }
 .announcements {
   grid-row: 1/3;
-  grid-column: 3;
+  grid-column-start: 3;
+}
+.grid-hl,
+.grid-text {
+  margin: 0.25rem;
+  font-size: 1.25rem;
 }
 .grid-hl {
   font-size: 1.5rem;
   font-weight: bold;
-}
-.grid-hl,
-.grid-text {
-  margin: 0.5rem;
-}
-.grid-text {
-  font-size: 1.25rem;
 }
