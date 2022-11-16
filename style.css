@@ -50,7 +50,7 @@ body {
   border-radius: 10px;
 }
 header {
-  border-bottom: 20px solid #34353a;
+  border-bottom: 25px solid #34353a;
 }
 #header-section {
   display: flex;
@@ -128,7 +128,7 @@ button:hover {
   padding: 1.4rem;
   background-color: #34353a;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 .grid:hover {
   scale: 1.05;
