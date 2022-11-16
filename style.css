@@ -23,6 +23,7 @@ body {
 .nav-item {
   display: flex;
   align-items: center;
+  margin-left: 1rem;
   margin-right: 1.5rem;
   gap: 0.5rem;
   cursor: pointer;
@@ -31,9 +32,11 @@ body {
   margin-top: 1rem;
   font-size: 2rem;
 }
-.home,
+.home {
+  margin-top: 2rem;
+}
 .settings {
-  margin-top: 2.5rem;
+  margin-top: 490px;
 }
 .nav-item:hover {
   background-color: black;
