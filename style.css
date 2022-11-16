@@ -44,6 +44,7 @@ body {
   display: grid;
   grid-template-rows: 1fr 3.5fr;
   background-color: white;
+  border-radius: 10px;
 }
 header {
   border-bottom: 20px solid #34353a;
@@ -78,12 +79,13 @@ header {
   cursor: pointer;
   color: #34353a;
 }
-#profile-picture:hover {
-  scale: 1.3;
+img:hover {
+  scale: 1.25;
 }
 #profile-name {
   font-size: 1.4rem;
   font-weight: bold;
+  color: #34353a;
 }
 #search-bar-buttons {
   margin-top: 1rem;
@@ -108,10 +110,10 @@ button:hover {
   font-weight: bold;
 }
 #main-headlight-one {
-  margin-left: 440px;
+  margin-left: 450px;
 }
 #main-headlight-two {
-  margin-left: 550px;
+  margin-left: 575px;
 }
 .grid-area {
   display: grid;
@@ -126,7 +128,7 @@ button:hover {
   border-radius: 10px;
 }
 .grid:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 .announcements {
   grid-row: 1/3;
@@ -135,7 +137,6 @@ button:hover {
 .grid-hl {
   font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
 }
 .grid-hl,
 .grid-text {
