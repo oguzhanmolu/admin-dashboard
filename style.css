@@ -42,7 +42,7 @@ body {
 }
 .main-content-container {
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 3.5fr;
   background-color: white;
 }
 header {
@@ -86,7 +86,7 @@ header {
   font-weight: bold;
 }
 #search-bar-buttons {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   margin-left: 112px;
 }
 button {
@@ -95,7 +95,6 @@ button {
   padding: 20px;
   border-radius: 10px;
   margin-left: 20px;
-  margin-bottom: 2rem;
   font-size: 1.5rem;
   border-style: none;
 }
@@ -104,38 +103,33 @@ button:hover {
   cursor: pointer;
 }
 #main-hl {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 2rem;
   font-weight: bold;
 }
 #main-headlight-one {
-  margin-left: 450px;
+  margin-left: 440px;
 }
 #main-headlight-two {
-  margin-left: 525px;
+  margin-left: 550px;
 }
 .grid-area {
   display: grid;
-  gap: 0.5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  gap: 1.5rem;
+  margin: 1rem;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 .grid {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-  padding: 0.5rem;
-  background-color: white;
-  border-radius: 20px;
-  border: 8px solid #34353a;
-  border-left: 15px solid #34353a;
+  padding: 1.4rem;
+  background-color: #34353a;
+  color: white;
+  border-radius: 10px;
 }
 .grid:hover {
   scale: 1.1;
 }
 .announcements {
-  grid-row: 1/4;
+  grid-row: 1/3;
   grid-column: 3;
 }
 .grid-hl {
@@ -145,7 +139,7 @@ button:hover {
 }
 .grid-hl,
 .grid-text {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 .grid-text {
   font-size: 1.25rem;
