@@ -5,11 +5,13 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+body {
+  background-color: #34353a;
+}
 .main-grid-container {
-  height: 100vh;
-  width: 100vw;
   display: grid;
   grid-template-columns: 1fr 5fr;
+  border: 20px solid #34353a;
 }
 .nav-sidebar {
   display: flex;
@@ -21,7 +23,6 @@
 .nav-item {
   display: flex;
   align-items: center;
-  margin-left: 1.5rem;
   margin-right: 1.5rem;
   gap: 0.5rem;
   cursor: pointer;
@@ -39,10 +40,13 @@
   scale: 1.15;
   filter: invert();
 }
-
 .main-content-container {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
+  background-color: white;
+}
+header {
+  border-bottom: 20px solid #34353a;
 }
 #header-section {
   display: flex;
@@ -59,7 +63,7 @@
 #search-bar-space {
   width: 600px;
   height: 30px;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(225, 225, 225);
   border-radius: 10px;
 }
 #user-profile {
@@ -91,29 +95,41 @@ button {
   padding: 20px;
   border-radius: 10px;
   margin-left: 20px;
+  margin-bottom: 2rem;
   font-size: 1.5rem;
   border-style: none;
 }
 button:hover {
   scale: 1.25;
+  cursor: pointer;
 }
-/*  */
-.main-content {
-  background-color: rgb(210, 210, 210);
+#main-hl {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#main-headlight-one {
+  margin-left: 450px;
+}
+#main-headlight-two {
+  margin-left: 525px;
 }
 .grid-area {
-  height: 750px;
   display: grid;
+  gap: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
-
 .grid {
-  margin: 1.25rem;
-  padding: 1rem;
-  background-color: #34353a;
-  color: white;
-  border-radius: 10px;
-  border-left: 10px solid #34353a;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 20px;
+  border: 8px solid #34353a;
+  border-left: 15px solid #34353a;
 }
 .grid:hover {
   scale: 1.1;
@@ -123,7 +139,7 @@ button:hover {
   grid-column: 3;
 }
 .grid-hl {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
 }
@@ -133,15 +149,4 @@ button:hover {
 }
 .grid-text {
   font-size: 1.25rem;
-}
-#hl {
-  margin: 2rem;
-  font-size: 1.75rem;
-  font-weight: bold;
-}
-#main-headlight-one {
-  margin-left: 425px;
-}
-#main-headlight-two {
-  margin-left: 600px;
 }
